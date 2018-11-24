@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions fileRevision="20120217" version="11.1.1.7.0.0.8" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/DD/20100524/DI" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns4="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns5="http://xmlns.oracle.com/bpm/OracleExtensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <process processType="Public" isExecutable="true" name="NSIAProcess" id="NSIAProcess">
+        <extensionElements>
+            <ns5:OracleExtensions>
+                <ns5:FeatureSet>
+                    <ns5:BooleanFeature value="false" name="atomic"/>
+                    <ns5:BooleanFeature value="false" name="instanceScreenflow"/>
+                    <ns5:BooleanFeature value="true" name="relative-coordinates"/>
+                    <ns5:BooleanFeature value="true" name="sharePredefineVariables"/>
+                    <ns5:BooleanFeature value="true" name="suspendInstanceOnDataAssociationError"/>
+                    <ns5:StringFeature value="" name="ANALYTICS_VIEW_IDENTIFIER"/>
+                    <ns5:StringFeature value="" name="AUTHOR"/>
+                    <ns5:StringFeature value="default" name="GreedyExecutionMode"/>
+                    <ns5:StringFeature value="http://xmlns.oracle.com/bpmn/bpmnProcess/NSIAProcess" name="NAMESPACE"/>
+                    <ns5:StringFeature value="PROJECT_DEFAULT" name="generatesEvents"/>
+                    <ns5:StringFeature value="HORIZONTAL_LAYOUT" name="process-layout"/>
+                    <ns5:StringFeature value="1.0" name="scale"/>
+                    <ns5:StringFeature value="REGULAR" name="sealType"/>
+                </ns5:FeatureSet>
+                <ns5:ApplicationInfo>
+                    <ns5:AppLinkName/>
+                    <ns5:Description/>
+                    <ns5:AppTags/>
+                    <ns5:AppCategory/>
+                    <ns5:AppExternalDocuments/>
+                </ns5:ApplicationInfo>
+            </ns5:OracleExtensions>
+        </extensionElements>
+        <laneSet>
+            <lane name="BusinessAccountManager" id="lane0">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="0" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="BusinessAccountManager"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="DepartmentManagerBFI" id="lane1">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="200" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="DepartmentManagerBFI"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="BusinessAccountManagerAndCommertialSupport" id="lane3">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="400" y="0"/>
+                            <ns5:Size width="336" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="BusinessAccountManagerAndCommertialSupport"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="CommertialSupport" id="lane2">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="736" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="CommertialSupport"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="CAEDepartmentManager" id="lane4">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="936" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="CAEDepartmentManager"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="DirectorBFI" id="lane10">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="1136" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="DirectorBFI"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="BFIAssistant" id="lane5">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="1336" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="BFIAssistant"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="RiskManagmentDRCDepartmentManager" id="lane6">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="1536" y="0"/>
+                            <ns5:Size width="264" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="RiskManagmentDRCDepartmentManager"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="DRCCreditAnalystRiskManagmerDRCHeadDepartment" id="lane7">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="1800" y="0"/>
+                            <ns5:Size width="360" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="DRCCreditAnalystRiskManagmerDRCHeadDepartment"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="DRCAssistant" id="lane8">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="2160" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="DRCAssistant"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+            <lane name="BusinessAccountManagerFinaly" id="lane9">
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:GraphicsAttributes backgroundColor="-1761607681">
+                            <ns5:Position x="2360" y="0"/>
+                            <ns5:Size width="200" height="0"/>
+                        </ns5:GraphicsAttributes>
+                        <ns5:LaneAttributes roleId="BusinessAccountManagerFinaly"/>
+                        <ns5:FeatureSet/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </lane>
+        </laneSet>
+        <userTask isForCompensation="false" name="Receipt of Customer Request" id="ACT24146578759246">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="208" y="53"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="INITIATOR" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="BusinessAccountManager" id="lane0"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Request transmission to Department Manager" id="ACT24146595417868">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="323" y="55"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="BusinessAccountManager" id="lane0"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Usage Checks" id="ACT24146602165288">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="319" y="283"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DepartmentManagerBFI" id="lane1"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Visa and transmission to comertial support" id="ACT24146635701495">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="164" y="546"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="BusinessAccountManagerAndCommertialSupport" id="lane3"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Save in the quality Application" id="ACT24146646297812">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="481" y="793"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="CommertialSupport" id="lane2"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Analysis and motivation cutomer's request" id="ACT24146685117946">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="160" y="786"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="CommertialSupport" id="lane2"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Request and File Validations" id="ACT24146702734478">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="161" y="1014"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="CAEDepartmentManager" id="lane4"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Transmission to DRC" id="ACT24146762067358">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="112" y="1429"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="BFIAssistant" id="lane5"/>
+        </userTask>
+        <userTask isForCompensation="false" name="CRCCA" id="ACT24146787135437">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="354" y="1665"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="RiskManagmentDRCDepartmentManager" id="lane6"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Preparation of documents" id="ACT24146804980957">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="347" y="1872"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DRCCreditAnalystRiskManagmerDRCHeadDepartment" id="lane7"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Save in the quality ApplicationException" id="ACT24146834787836">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="206" y="2224"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DRCAssistant" id="lane8"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Transmission of the file to legal department" id="ACT24146839029911">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="338" y="2221"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DRCAssistant" id="lane8"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Transmission of the file to the client" id="ACT24146851191436">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="482" y="2222"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DRCAssistant" id="lane8"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Transmition to BFI Director" id="ACT24148005292916">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="307" y="1197"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="DirectorBFI" id="lane10"/>
+        </userTask>
+        <userTask isForCompensation="false" name="Transmission to DG" id="ACT24148487541810">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="451" y="1433"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="reinitiate"/>
+                        <ns5:BooleanFeature value="false" name="manualCreation"/>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                        <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
+                        <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                    </ns5:FeatureSet>
+                    <ns5:HumanTask/>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <resourceRole name="BFIAssistant" id="lane5"/>
+        </userTask>
+        <startEvent isInterrupting="false" name="Start" id="EVT24146578759272">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="83" y="49"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <outputSet/>
+        </startEvent>
+        <endEvent name="End" id="EVT24146578759223">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="611" y="2220"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="inputValidation"/>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <inputSet/>
+        </endEvent>
+        <exclusiveGateway gatewayDirection="Unspecified" name="usage check outcome" id="GTW24147927134534">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="515" y="284"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <exclusiveGateway gatewayDirection="Unspecified" name="Favorable opinion" id="GTW24147946347325">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="317" y="1013"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <exclusiveGateway gatewayDirection="Unspecified" name="transmission outcome" id="GTW24147970799873">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="303" y="1428"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <exclusiveGateway gatewayDirection="Unspecified" name="transmition to BFI outcome" id="GTW24148013435479">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="160" y="1198"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <exclusiveGateway gatewayDirection="Unspecified" name="Transmission to DRC outcome" id="GTW24148495749594">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="570" y="1434"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <exclusiveGateway gatewayDirection="Unspecified" name="CRCCA outcome" id="GTW24148511826785">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="350" y="1748"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </exclusiveGateway>
+        <sequenceFlow sourceRef="EVT24146578759272" targetRef="ACT24146578759246" name="sf9" id="sf9">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146578759246" targetRef="ACT24146595417868" name="sf10" id="sf10">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146595417868" targetRef="ACT24146602165288" name="sf13" id="sf13">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146602165288" targetRef="GTW24147927134534" name="sf14" id="sf14">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146635701495" targetRef="ACT24146646297812" name="sf15" id="sf15">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146646297812" targetRef="ACT24146685117946" name="sf16" id="sf16">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146685117946" targetRef="ACT24146702734478" name="sf17" id="sf17">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146702734478" targetRef="GTW24147946347325" name="sf18" id="sf18">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146762067358" targetRef="GTW24147970799873" name="sf19" id="sf19">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146787135437" targetRef="GTW24148511826785" name="sf20" id="sf20">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146804980957" targetRef="ACT24146834787836" name="sf21" id="sf21">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="203" y="2059"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="203,2059" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146834787836" targetRef="ACT24146839029911" name="sf22" id="sf22">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146839029911" targetRef="ACT24146851191436" name="sf23" id="sf23">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24146851191436" targetRef="EVT24146578759223" name="sf24" id="sf24">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147927134534" targetRef="ACT24146635701495" name="sf26" id="sf26">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="514" y="373"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="514,373" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147927134534" targetRef="ACT24146595417868" name="sf30" id="sf30">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="478" y="57"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="478,57" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="NO" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147946347325" targetRef="ACT24148005292916" name="sf33" id="sf33">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147946347325" targetRef="ACT24146646297812" name="sf35" id="sf35">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="507" y="1002"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="507,1002" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147970799873" targetRef="ACT24148487541810" name="sf36" id="sf36">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24148005292916" targetRef="GTW24148013435479" name="sf37" id="sf37">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148013435479" targetRef="ACT24146762067358" name="sf40" id="sf40">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="100" y="1275"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="100,1275" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148013435479" targetRef="ACT24146685117946" name="sf42" id="sf42">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="52" y="1158"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="52,1158" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="NO" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24147970799873" targetRef="ACT24148005292916" name="sf46" id="sf46">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                        <ns5:StringFeature value="NO" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT24148487541810" targetRef="GTW24148495749594" name="sf49" id="sf49">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148495749594" targetRef="ACT24146787135437" name="sf51" id="sf51">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="571" y="1651"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="571,1651" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="Yes" name="userName"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148495749594" targetRef="ACT24146762067358" name="sf53" id="sf53">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="257" y="1565"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="257,1565" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="NO" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148511826785" targetRef="ACT24146804980957" name="sf54" id="sf54">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="GTW24148511826785" targetRef="ACT24146762067358" name="sf56" id="sf56">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions x="218" y="1749"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="218,1749" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                        <ns5:StringFeature value="NO" name="userName"/>
+                        <ns5:IntegerFeature value="0" name="order"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <conditionExpression xsi:type="tFormalExpression"/>
+        </sequenceFlow>
+    </process>
+</definitions>

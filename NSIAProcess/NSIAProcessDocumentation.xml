@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="NSIAProcess">
+        <topicDocumentations>
+            <topicDocumentation name="NSIAProcess">
+                <descriptions>
+                    <description locale="en">NSIAProcess</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT24146578759272">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT24146578759223">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146578759246">
+                <labels>
+                    <label locale="en">Receipt of Customer Request</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146595417868">
+                <labels>
+                    <label locale="en">Request transmission to Department Manager</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146602165288">
+                <labels>
+                    <label locale="en">Usage Checks</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146635701495">
+                <labels>
+                    <label locale="en">Visa and transmission to comertial support</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146646297812">
+                <labels>
+                    <label locale="en">Save in the quality Application</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146685117946">
+                <labels>
+                    <label locale="en">Analysis and motivation cutomer's request</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146702734478">
+                <labels>
+                    <label locale="en">Request and File Validations</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146762067358">
+                <labels>
+                    <label locale="en">Transmission to DRC</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146787135437">
+                <labels>
+                    <label locale="en">CRCCA</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146804980957">
+                <labels>
+                    <label locale="en">Preparation of documents</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146834787836">
+                <labels>
+                    <label locale="en">Save in the quality ApplicationException</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146839029911">
+                <labels>
+                    <label locale="en">Transmission of the file to legal department</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24146851191436">
+                <labels>
+                    <label locale="en">Transmission of the file to the client</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24147927134534">
+                <labels>
+                    <label locale="en">usage check outcome</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24147946347325">
+                <labels>
+                    <label locale="en">Favorable opinion</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24147970799873">
+                <labels>
+                    <label locale="en">transmission outcome</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24148005292916">
+                <labels>
+                    <label locale="en">Transmition to BFI Director</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24148013435479">
+                <labels>
+                    <label locale="en">transmition to BFI outcome</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT24148487541810">
+                <labels>
+                    <label locale="en">Transmission to DG</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24148495749594">
+                <labels>
+                    <label locale="en">Transmission to DRC outcome</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW24148511826785">
+                <labels>
+                    <label locale="en">CRCCA outcome</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf9"/>
+            <topicDocumentation name="sf10"/>
+            <topicDocumentation name="sf13"/>
+            <topicDocumentation name="sf14"/>
+            <topicDocumentation name="sf15"/>
+            <topicDocumentation name="sf16"/>
+            <topicDocumentation name="sf17"/>
+            <topicDocumentation name="sf18"/>
+            <topicDocumentation name="sf19"/>
+            <topicDocumentation name="sf20"/>
+            <topicDocumentation name="sf21"/>
+            <topicDocumentation name="sf22"/>
+            <topicDocumentation name="sf23"/>
+            <topicDocumentation name="sf24"/>
+            <topicDocumentation name="sf26">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf30">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf33">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf35">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf36">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf37"/>
+            <topicDocumentation name="sf40">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf42">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf46">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf49"/>
+            <topicDocumentation name="sf51">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf53">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf54"/>
+            <topicDocumentation name="sf56">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+        </topicDocumentations>
+    </component>
+</processDocumentation>
